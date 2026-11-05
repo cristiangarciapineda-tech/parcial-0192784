@@ -34,70 +34,348 @@
                         </div>
                     </div>
                 </div>
+                
+
                 <div class="dropdown">
-                    <a href="#">components <img src="assets/icons/chevron-down.svg" alt="" class="chevron"></a>
-                    <div class="dropdown">
-                        <a href="#"></a>
+                    <a href="#">Components <img src="assets/icons/chevron-down.svg" alt="" class="chevron"></a>
+                    <div class="dropdown-menu dropdown-grid">
+                        <a href="#"><strong>Alert Dialog</strong><span>A modal dialog that interrupts the user with important content.</span></a>
+                        <a href="#"><strong>Hover Card</strong><span>For sighted users to preview content available behind a link.</span></a>
+                        <a href="#"><strong>Progress</strong><span>Displays an indicator showing the completion progress of a task.</span></a>
+                        <a href="#"><strong>Scroll Area</strong><span>A scrollable container with custom scrollbars.</span></a>
+                        <a href="#"><strong>Tabs</strong><span>A set of layered sections of content, displayed one at a time.</span></a>
+                        <a href="#"><strong>Tooltip</strong><span>A popup that displays information related to an element.</span></a>
                     </div>
                 </div>
+
+                <a href="#">Documentation</a>
             </nav>
 
+            <div class="navbar-right">
+                <a href="#" class="signin">Sign in</a>
+                <a href="#" class="btn btn-primary">Get started</a>
+                <button class="menu-btn" onclick="toggleMenu()">
+                    <img src="assets/icons/menu.svg" alt="Menú">
+                </button>
+            </div>
+        </div>
+
+        <nav class="side-menu" id="sideMenu">
+            <a href="#" onclick="closeMenu()">Getting started</a>
+            <a href="#" onclick="closeMenu()">Components</a>
+            <a href="#" onclick="closeMenu()">Documentation</a>
+            <a href="#" onclick="closeMenu()">Sign in</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="badge">
+                <span class="muted">New version of Launch UI is out!</span>
+                <a href="#">Read more <img src="assets/icons/arrow-right.svg" alt=""></a>
+            </span>
+
+            <h1>Give your big idea the website it deserves</h1>
+
+            <p class="hero-text">
+                Landing page kit template with React, Shadcn/ui and Tailwind
+                that you can copy/paste into your project.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary btn-lg">Get started</a>
+                <a href="https://github.com/launch-ui/launch-ui" target="_blank" class="btn btn-glass btn-lg">Github</a>
+            </div>
+
+
+            <div class="mockup-area">
+                <div class="mockup" id="mockup">
+                    <img src="assets/img/dashboard.png" alt="Dashboard" id="dashboard">
+                </div>
+
+                <div class="glow glow-top"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container center">
+            <span class="badge badge-brand">Last updated: 4 Nov 2026</span>
+            <h2 class="title-sm">Built with industry-standard tools and best practices</h2>
+
+            <div class="logos">
+                <div class="tech"><img src="assets/logos/figma.svg" alt=""> Figma</div>
+                <div class="tech"><img src="assets/logos/react.svg" alt=""> React <span class="muted">19.3.1</span> <span class="new">New</span></div>
+                <div class="tech"><img src="assets/logos/typescript.svg" alt=""> TypeScript <span class="muted">6.0.3</span></div>
+                <div class="tech"><img src="assets/logos/shadcn-ui.svg" alt=""> Shadcn/ui <span class="muted">4.11.0</span></div>
+                <div class="tech"><img src="assets/logos/tailwind.svg" alt=""> Tailwind <span class="muted">4.3.4</span> <span class="new">New</span></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container center">
+            <h2 class="title title-narrow">Everything you need. Nothing you don't.</h2>
+
+            <div class="features">
+                <div class="feature">
+                    <h3><img src="assets/icons/scan-face.svg" alt=""> Accessibility first</h3>
+                    <p>Fully WCAG 2.0 compliant, made with best a11y practices</p>
+                </div>
+                <div class="feature">
+                    <h3><img src="assets/icons/monitor-smartphone.svg" alt=""> Responsive design</h3>
+                    <p>Looks and works great on any device and screen size</p>
+                </div>
+                <div class="feature">
+                    <h3><img src="assets/icons/eclipse.svg" alt=""> Light and dark mode</h3>
+                    <p>Seamless switching between color schemes, 6 themes included</p>
+                </div>
+                <div class="feature">
+                    <h3><img src="assets/icons/blocks.svg" alt=""> Easy to customize</h3>
+                    <p>Flexible options to match your product or brand</p>
+                </div>
+                <div class="feature">
+                    <h3><img src="assets/icons/fast-forward.svg" alt=""> Top-level performance</h3>
+                    <p>Made for lightning-fast load times and smooth interactions</p>
+                </div>
+                <div class="feature">
+                    <h3><img src="assets/icons/rocket.svg" alt=""> Production ready</h3>
+                    <p>Thoroughly tested and launch-prepared</p>
+                </div>
+                <div class="feature">
+                    <h3><img src="assets/icons/languages.svg" alt=""> Made for localization</h3>
+                    <p>Easy to implement support for multiple languages and regions</p>
+                </div>
+                <div class="feature">
+                    <h3><img src="assets/icons/square-pen.svg" alt=""> CMS friendly</h3>
+                    <p>Built to work with any headless content management system</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="section">
+        <div class="container stats">
+            <div class="stat">
+                <p class="muted">used by</p>
+                <p class="stat-number">26.3<span>k</span></p>
+                <p class="muted">designers on Figma Community</p>
+            </div>
+            <div class="stat">
+                <p class="muted">over</p>
+                <p class="stat-number">7022</p>
+                <p class="muted">clones and forks of the template on GitHub</p>
+            </div>
+            <div class="stat">
+                <p class="muted">already</p>
+                <p class="stat-number">40.6<span>k</span></p>
+                <p class="muted">installations with shadcn/ui CLI</p>
+            </div>
+            <div class="stat">
+                <p class="muted">includes</p>
+                <p class="stat-number">74</p>
+                <p class="muted">blocks and sections</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container center">
+            <h2 class="title">Build your dream landing page, today.</h2>
+            <p class="subtitle">Get lifetime access to all the components. No recurring fees. Just simple, transparent pricing.</p>
+            <div class="plans">
+
+                <div class="plan plan-free">
+                    <div class="plan-head">
+                        <h3>Free</h3>
+                        <p class="muted">For everyone starting out on a website for their big idea</p>
+                    </div>
+                    <div class="price"><span class="muted">$</span>0</div>
+                    <a href="#" class="btn btn-glass btn-lg">Get started for free</a>
+                    <p class="muted small">Free and open-source forever. Get started now.</p>
+                    <hr>
+                    <ul>
+                        <li><img src="assets/icons/check.svg" alt=""> 1 website template</li>
+                        <li><img src="assets/icons/check.svg" alt=""> 9 blocks and sections</li>
+                        <li><img src="assets/icons/check.svg" alt=""> 4 custom animations</li>
+                    </ul>
+                </div>
+
+                <div class="plan plan-pro">
+                    <div class="plan-head">
+                        <h3><img src="assets/icons/user.svg" alt=""> Pro</h3>
+                        <p class="muted">For early-stage founders, solopreneurs and indie devs</p>
+                    </div>
+                    <div class="price-row">
+                        <div class="price"><span class="muted">$</span>99</div>
+                        <p class="small">one-time payment<br><span class="muted">plus local taxes</span></p>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg">Get all-access</a>
+                    <p class="muted small">Lifetime access. Free updates. No recurring fees.</p>
+                    <hr>
+                    <ul>
+                        <li><img src="assets/icons/check.svg" alt=""> 7 templates</li>
+                        <li><img src="assets/icons/check.svg" alt=""> 74 blocks and sections</li>
+                        <li><img src="assets/icons/check.svg" alt=""> 23 illustrations</li>
+                        <li><img src="assets/icons/check.svg" alt=""> 15 custom animations</li>
+                    </ul>
+                </div>
+
+                <div class="plan plan-team">
+                    <div class="plan-head">
+                        <h3><img src="assets/icons/users.svg" alt=""> Pro Team</h3>
+                        <p class="muted">For teams and agencies working on cool products together</p>
+                    </div>
+                    <div class="price-row">
+                        <div class="price"><span class="muted">$</span>499</div>
+                        <p class="small">one-time payment<br><span class="muted">plus local taxes</span></p>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg">Get all-access for your team</a>
+                    <p class="muted small">Lifetime access. Free updates. No recurring fees.</p>
+                    <hr>
+                    <ul>
+                        <li><img src="assets/icons/check.svg" alt=""> All the templates, components and sections available for your entire team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container center">
+            <h2 class="title">Questions and Answers</h2>
+
+            <div class="faq">
+                <details>
+                    <summary>Why is building a great landing page critical for your business? <img src="assets/icons/chevron-down.svg" alt=""></summary>
+                    <p>In today's AI-driven world, standing out is harder than ever. While anyone can build a product, a professional landing page makes the difference between success and failure.</p>
+                    <p>Launch UI helps you ship faster without compromising on quality.</p>
+                </details>
+                <details>
+                    <summary>Why use Launch UI instead of a no-code tool? <img src="assets/icons/chevron-down.svg" alt=""></summary>
+                    <p>No-code tools lock you into their ecosystem with recurring fees and limited control. They often come with performance issues and make it difficult to integrate with your product.</p>
+                    <p>Launch UI gives you full control of your code while maintaining professional quality.</p>
+                </details>
+                <details>
+                    <summary>How is Launch UI different from other component libraries and templates? <img src="assets/icons/chevron-down.svg" alt=""></summary>
+                    <p>Launch UI stands out with premium design quality and delightful touches of custom animations and illustrations.</p>
+                    <p>All components are carefully crafted to help position your product as a professional tool, avoiding the generic template look.</p>
+                </details>
+                <details>
+                    <summary>What exactly does it mean that "The code is yours"? <img src="assets/icons/chevron-down.svg" alt=""></summary>
+                    <p>The basic version of Launch UI is open-source and free forever, under a do-whatever-you-want license.</p>
+                    <p>The pro version is a one-time purchase that gives you lifetime access to all current and future content.</p>
+                </details>
+                <details>
+                    <summary>Are Figma files included? <img src="assets/icons/chevron-down.svg" alt=""></summary>
+                    <p>Yes! The complete Launch UI template is available for free on the Figma community.</p>
+                </details>
+                <details>
+                    <summary>Can I get a discount? <img src="assets/icons/chevron-down.svg" alt=""></summary>
+                    <p>Actually, yes! I'm always actively looking for beta testers of new features. If you are interested in exchanging feedback for a discount, please contact me via email.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta">
+        <div class="container center">
+            <h2 class="title">Start building</h2>
+            <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+        <div class="glow glow-bottom"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="logo footer-logo">
+                    <img src="assets/logos/launch-ui.svg" alt="">
+                    Launch UI
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#">Changelog</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="#">Discord</a>
+                    <a href="#">Twitter</a>
+                    <a href="https://github.com/launch-ui/launch-ui" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 Launch UI. All rights reserved</span>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <button class="theme-btn" onclick="changeTheme()">
+                        <img src="assets/icons/sun.svg" alt="Cambiar tema" id="themeIcon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </div>
-    <main>
-    <div class="container hero__content">
 
-        <p class="badge">
-            <span class="badge__text">New version of Launch UI is out!</span>
-            <a href="#" class="badge__link">Read more
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-        </p>
 
-        <h1 class="hero__title">
-            <span>Give your big idea the website it deserves</span>
-        </h1>
+    <div class="toolbar">
+        <button class="dot active" style="background:#f97316" onclick="changeColor(this, '#fdba74', '#f59e0b')"></button>
+        <button class="dot" style="background:#e11d48" onclick="changeColor(this, '#fda4af', '#f43f5e')"></button>
+        <button class="dot" style="background:#7c3aed" onclick="changeColor(this, '#c4b5fd', '#8b5cf6')"></button>
+        <button class="dot" style="background:#2563eb" onclick="changeColor(this, '#93c5fd', '#3b82f6')"></button>
+        <button class="dot" style="background:#16a34a" onclick="changeColor(this, '#86efac', '#22c55e')"></button>
 
-        <p class="hero__description">
-            Landing page kit template with React,
-            Shadcn/ui and Tailwind that you can
-            copy/paste into your project.
-        </p>
+        <span class="divider"></span>
 
-        <div class="hero__buttons">
-        <a href="#preview" class="btn btn--light btn--lg">Get started</a>
-        <a href="https://github.com/" class="btn btn--dark btn--lg">Github</a>
-        </div>
+        <button class="device active" onclick="changeSize(this, '100%')"><img src="assets/icons/monitor.svg" alt="Escritorio"></button>
+        <button class="device" onclick="changeSize(this, '768px')"><img src="assets/icons/tablet.svg" alt="Tablet"></button>
+        <button class="device" onclick="changeSize(this, '390px')"><img src="assets/icons/smartphone.svg" alt="Celular"></button>
+
+        <a href="index.html" target="_blank" class="btn btn-primary btn-sm">Live preview</a>
     </div>
 
-    <div class="preview" id="preview">
-        <div class="preview__glow" aria-hidden="true"></div>
-
-            <div class="toolbar">
-                <div class="toolbar__colors" aria-label="Colores (decorativo)">
-                    <button type="button" class="dot dot--orange is-active" tabindex="-1"></button>
-                    <button type="button" class="dot dot--rose" tabindex="-1"></button>
-                    <button type="button" class="dot dot--violet" tabindex="-1"></button>
-                    <button type="button" class="dot dot--blue" tabindex="-1"></button>
-                    <button type="button" class="dot dot--green" tabindex="-1"></button>
-                </div>
-
-                <span class="toolbar__sep"></span>
-
-                <div class="toolbar__devices">
-                    <button type="button" class="device-btn" tabindex="-1" title="Escritorio">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-                    </button>
-                    <button type="button" class="device-btn" tabindex="-1" title="Tablet">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M12 18h.01"/></svg>
-                    </button>
-                    <button type="button" class="device-btn is-active" tabindex="-1" title="Celular">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M12 18h.01"/></svg>
-                    </button>
-                </div>
+    <script>
+        function changeColor(button, color, colorDark) {
+            document.body.style.setProperty('--brand', color);
+            document.body.style.setProperty('--brand-dark', colorDark);
+            document.querySelector('.dot.active').classList.remove('active');
+            button.classList.add('active');
+        }
 
 
-</main>
+        function changeSize(button, width) {
+            document.getElementById('page').style.maxWidth = width;
+            document.body.classList.toggle('framed', width !== '100%');
+            document.querySelector('.device.active').classList.remove('active');
+            button.classList.add('active');
+        }
 
+
+        function toggleMenu() {
+            document.getElementById('sideMenu').classList.toggle('open');
+        }
+
+        function closeMenu() {
+            document.getElementById('sideMenu').classList.remove('open');
+        }
+
+
+        function changeTheme() {
+            document.body.classList.toggle('light');
+            var isLight = document.body.classList.contains('light');
+            document.getElementById('themeIcon').src = isLight ? 'assets/icons/moon.svg' : 'assets/icons/sun.svg';
+        }
+    </script>
 </body>
 </html>
