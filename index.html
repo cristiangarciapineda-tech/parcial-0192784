@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Launch UI</title>
+    <link rel="icon" href="assets/logos/launch-ui.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<div class="phone">
+<div class="page" id="page">
 
-    <header>
+    <header> class="navbar"
         <div class="container navbar__inner">
             <a href="#" class="logo">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 21 11 13" />
-                    <path d="M7 21 19 9" />
-                    <path d="M13 21 19 15" />
-                    <path d="M13 4h7v7" />
-                </svg>
+                <img src="assets/logos/launch-ui.svg" alt="">
                 Launch UI
             </a>
+
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="#">Getting started <img src="assets/icons/chevron-down.svg" alt="" class="chevron"></a>
+                    <div class="dropdown-menu dropdown-wide">
+                        <a href="#" class="dropdown-feature">
+                            <img src="assets/logos/launch-ui.svg" alt="">
+                            <strong>Launch UI</strong>
+                            <span>Landing page template built with React, Shadcn/ui and Tailwind that you can copy/paste into your project</span>
+                        </a>
+                        <div>
+                            <a href="#"><strong>Introduction</strong><span>Reusable components built using Radix UI and Tailwind CSS.</span></a>
+                            <a href="#"><strong>Installation</strong><span>How to install dependencies and structure your app.</span></a>
+                            <a href="#"><strong>Typography</strong><span>Styles for headinngs, paragraphs, list...etc</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">components <img src="assets/icons/chevron-down.svg" alt="" class="chevron"></a>
+                    <div class="dropdown">
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </nav>
 
 
 </div>
