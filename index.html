@@ -11,31 +11,33 @@
 <body>
 <div class="page" id="page">
 
-    <header> class="navbar"
-        <div class="container navbar__inner">
+
+    <header class="navbar">
+        <div class="container navbar-inner">
             <a href="#" class="logo">
                 <img src="assets/logos/launch-ui.svg" alt="">
                 Launch UI
             </a>
 
             <nav class="nav">
+                <!-- Menú desplegable 1 (se abre al pasar el mouse) -->
                 <div class="dropdown">
                     <a href="#">Getting started <img src="assets/icons/chevron-down.svg" alt="" class="chevron"></a>
                     <div class="dropdown-menu dropdown-wide">
                         <a href="#" class="dropdown-feature">
                             <img src="assets/logos/launch-ui.svg" alt="">
                             <strong>Launch UI</strong>
-                            <span>Landing page template built with React, Shadcn/ui and Tailwind that you can copy/paste into your project</span>
+                            <span>Landing page template built with React, Shadcn/ui and Tailwind that you can copy/paste into your project.</span>
                         </a>
                         <div>
                             <a href="#"><strong>Introduction</strong><span>Reusable components built using Radix UI and Tailwind CSS.</span></a>
                             <a href="#"><strong>Installation</strong><span>How to install dependencies and structure your app.</span></a>
-                            <a href="#"><strong>Typography</strong><span>Styles for headinngs, paragraphs, list...etc</span></a>
+                            <a href="#"><strong>Typography</strong><span>Styles for headings, paragraphs, lists...etc</span></a>
                         </div>
                     </div>
                 </div>
-                
 
+                <!-- Menú desplegable 2 -->
                 <div class="dropdown">
                     <a href="#">Components <img src="assets/icons/chevron-down.svg" alt="" class="chevron"></a>
                     <div class="dropdown-menu dropdown-grid">
@@ -59,7 +61,7 @@
                 </button>
             </div>
         </div>
-
+        <!-- Menú para celular (se abre con el botón ☰) -->
         <nav class="side-menu" id="sideMenu">
             <a href="#" onclick="closeMenu()">Getting started</a>
             <a href="#" onclick="closeMenu()">Components</a>
@@ -67,6 +69,8 @@
             <a href="#" onclick="closeMenu()">Sign in</a>
         </nav>
     </header>
+
+
 
     <section class="hero">
         <div class="container hero-content">
@@ -87,7 +91,7 @@
                 <a href="https://github.com/launch-ui/launch-ui" target="_blank" class="btn btn-glass btn-lg">Github</a>
             </div>
 
-
+            <!-- Vista previa del dashboard -->
             <div class="mockup-area">
                 <div class="mockup" id="mockup">
                     <img src="assets/img/dashboard.png" alt="Dashboard" id="dashboard">
@@ -153,7 +157,9 @@
                     <p>Built to work with any headless content management system</p>
                 </div>
             </div>
+        </div>
     </section>
+
 
     <section class="section">
         <div class="container stats">
@@ -180,12 +186,14 @@
         </div>
     </section>
 
+
     <section class="section">
         <div class="container center">
             <h2 class="title">Build your dream landing page, today.</h2>
             <p class="subtitle">Get lifetime access to all the components. No recurring fees. Just simple, transparent pricing.</p>
-            <div class="plans">
 
+            <div class="plans">
+                <!-- Plan Free -->
                 <div class="plan plan-free">
                     <div class="plan-head">
                         <h3>Free</h3>
@@ -202,6 +210,7 @@
                     </ul>
                 </div>
 
+                <!-- Plan Pro (destacado) -->
                 <div class="plan plan-pro">
                     <div class="plan-head">
                         <h3><img src="assets/icons/user.svg" alt=""> Pro</h3>
@@ -222,6 +231,7 @@
                     </ul>
                 </div>
 
+                <!-- Plan Pro Team -->
                 <div class="plan plan-team">
                     <div class="plan-head">
                         <h3><img src="assets/icons/users.svg" alt=""> Pro Team</h3>
@@ -241,6 +251,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="section">
         <div class="container center">
@@ -279,6 +290,7 @@
         </div>
     </section>
 
+
     <section class="section cta">
         <div class="container center">
             <h2 class="title">Start building</h2>
@@ -286,6 +298,7 @@
         </div>
         <div class="glow glow-bottom"></div>
     </section>
+
 
     <footer class="footer">
         <div class="container">
@@ -328,7 +341,7 @@
 
 </div>
 
-
+    <!-- Barra flotante: colores + dispositivos -->
     <div class="toolbar">
         <button class="dot active" style="background:#f97316" onclick="changeColor(this, '#fdba74', '#f59e0b')"></button>
         <button class="dot" style="background:#e11d48" onclick="changeColor(this, '#fda4af', '#f43f5e')"></button>
@@ -346,6 +359,7 @@
     </div>
 
     <script>
+        // 1. Cambiar el color de la página
         function changeColor(button, color, colorDark) {
             document.body.style.setProperty('--brand', color);
             document.body.style.setProperty('--brand-dark', colorDark);
@@ -353,7 +367,7 @@
             button.classList.add('active');
         }
 
-
+        // 2. Cambiar el tamaño de toda la página (escritorio, tablet, celular)
         function changeSize(button, width) {
             document.getElementById('page').style.maxWidth = width;
             document.body.classList.toggle('framed', width !== '100%');
@@ -361,7 +375,7 @@
             button.classList.add('active');
         }
 
-
+        // 3. Abrir y cerrar el menú de celular
         function toggleMenu() {
             document.getElementById('sideMenu').classList.toggle('open');
         }
@@ -370,7 +384,7 @@
             document.getElementById('sideMenu').classList.remove('open');
         }
 
-
+        // 4. Modo claro / oscuro
         function changeTheme() {
             document.body.classList.toggle('light');
             var isLight = document.body.classList.contains('light');
