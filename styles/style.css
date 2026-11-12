@@ -1,22 +1,22 @@
 body {
-    --brand: #fdba74;          /* color claro de la marca  */
-    --brand-dark: #f59e0b;     /* color fuerte de la marca */
+    --brand: #fdba74;         
+    --brand-dark: #f59e0b;     
     --bg: #09090b;
     --text: #fafafa;
     --muted: #a1a1aa;
     --border: rgba(255, 255, 255, 0.1);
     --card: rgba(255, 255, 255, 0.03);
-    --icon: none;              /* filtro de los íconos */
+    --icon: none;              
 }
 
-/* Modo claro */
+
 body.light {
     --bg: #ffffff;
     --text: #09090b;
     --muted: #71717a;
     --border: rgba(0, 0, 0, 0.1);
     --card: rgba(0, 0, 0, 0.02);
-    --icon: invert(1);         /* los íconos blancos se ven negros */
+    --icon: invert(1);      
 }
 
 
@@ -54,7 +54,7 @@ img {
     max-width: 100%;
 }
 
-/* Todos los íconos blancos cambian con el tema */
+
 .navbar img,
 .side-menu img,
 .badge img,
@@ -66,9 +66,7 @@ img {
     filter: var(--icon);
 }
 
-/* Toda la página va dentro de .page.
-Los botones de dispositivo cambian su ancho y el diseño
-se adapta a ese ancho gracias a "container-type". */
+
 .page {
     container-type: inline-size;
     margin: 0 auto;
@@ -76,7 +74,7 @@ se adapta a ese ancho gracias a "container-type". */
     transition: max-width 0.4s;
 }
 
-/* Cuando se elige tablet o celular, la página se ve dentro de un marco */
+
 body.framed {
     background: #27272a;
 }
@@ -127,7 +125,7 @@ body.framed .page {
     opacity: 0.85;
 }
 
-/* Botón blanco */
+
 .btn-primary {
     background: linear-gradient(to bottom, #fafafa, #b4b4b8);
     color: #18181b;
@@ -139,7 +137,7 @@ body.light .btn-primary {
     color: #fafafa;
 }
 
-/* Botón de vidrio oscuro */
+
 .btn-glass {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     border: 1px solid var(--border);
@@ -255,7 +253,7 @@ body.light .navbar {
     transition: transform 0.2s;
 }
 
-/* Menús desplegables: aparecen al pasar el mouse */
+
 .dropdown {
     position: relative;
 }
@@ -348,7 +346,7 @@ body.light .navbar {
     display: block;
 }
 
-/* Menú de celular: se despliega debajo del navbar */
+
 .side-menu {
     position: absolute;
     top: 100%;
@@ -414,7 +412,7 @@ body.light .navbar {
     gap: 16px;
 }
 
-/* Vista previa del dashboard */
+
 .mockup-area {
     position: relative;
     width: 100%;
@@ -439,7 +437,7 @@ body.light .navbar {
     border-radius: 8px;
 }
 
-/* Barra de colores y dispositivos (encima de la imagen) */
+
 .toolbar {
     position: fixed;
     bottom: 16px;
@@ -511,7 +509,7 @@ body.light .navbar {
     top: -150px;
 }
 
-/* El texto del hero siempre queda encima del brillo */
+
 .hero h1,
 .hero-text,
 .hero-buttons,
@@ -675,7 +673,7 @@ body.light .navbar {
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Línea brillante arriba de cada plan */
+
 .plan::before {
     content: "";
     position: absolute;
@@ -686,7 +684,7 @@ body.light .navbar {
     background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.6), transparent);
 }
 
-/* Brillo arriba de los planes de pago */
+
 .plan-pro::after,
 .plan-team::after {
     content: "";
@@ -779,7 +777,7 @@ body.light .navbar {
     opacity: 0.6;
 }
 
-/* ---------- FAQ ---------- */
+
 .faq {
     width: 100%;
     max-width: 800px;
@@ -844,7 +842,7 @@ details p {
 
 
 .footer {
-    padding: 48px 0 90px;   /* espacio para la barra flotante */
+    padding: 48px 0 90px;   
 }
 
 .footer-grid {
@@ -910,7 +908,7 @@ details p {
     width: 16px;
 }
 
-/* Pantallas medianas */
+
 @container (max-width: 1024px) {
     .hero h1 {
         font-size: 72px;
@@ -933,7 +931,7 @@ details p {
     }
 }
 
-/* Tablet */
+
 @container (max-width: 768px) {
     .nav,
     .signin {
@@ -1036,7 +1034,7 @@ details p {
     }
 }
 
-/* Barra flotante en pantallas de celular reales */
+
 @media (max-width: 480px) {
     .toolbar {
         gap: 3px;
